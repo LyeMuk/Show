@@ -1,0 +1,227 @@
+body{
+  background:#000000;
+    color:white;    
+}
+*{
+    margin:0;
+    padding:0;
+}
+.community-heading{
+    margin:0 auto 100px auto;
+    display: flex;
+    flex-direction:column;
+    height:100vh;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  background:black;
+  opacity: 0.4;
+}
+.overlayText h1{
+  font-family: 'Labrada', serif;
+  font-size:3rem; 
+  text-transform:uppercase; 
+  color:#f2f2f2;
+  letter-spacing:1px;
+  font-weight:800;
+}
+.community-quote{
+  padding:10px;
+  font-family: 'Signika Negative', sans-serif;
+  margin-left:50px;
+  margin-top:10px;
+  text-align:justify;
+  width:50%;
+  font-size:1.1rem;
+  font-weight:500;
+  border-left:5px solid yellow;
+  color:#D6D6D6;
+}
+#myVideo{
+  object-fit: fill;
+  height:100%;
+  position: relative;
+}
+.overlayText {
+  position: absolute;
+  top: 30%;
+  left: 12%;
+  z-index: 2;
+}
+.topText {
+  color: white;
+  align-self: center;
+}
+
+.project-area{
+  display: grid;
+  grid-template-columns: 40% 40%;
+  row-gap: 20px;
+  column-gap: 150px;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top:50px;
+}
+.project-area-one{
+  display: grid;
+  grid-template-columns: 90%;
+  row-gap: 20px;
+  column-gap: 160px;
+  justify-content: center;
+}
+.project-item {
+  background:#150050;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height:400px;
+}
+.edu-skill,.sus-liv{
+  background:#150050;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  min-height:400px;
+}
+.edu-skill{
+  border-left: 5px solid #0557fa;
+}
+.edu-skill .projext-item-content-titel{
+  color:#0557fa;
+}
+.sus-liv{
+  border-left: 5px solid #229e09;
+}
+.sus-liv .projext-item-content-titel{
+  color:#229e09;
+}
+.img-holder{
+  width:44.5%;
+}
+.img-holder img{
+  height:100%;
+  width:100%;
+}
+.image-holder{
+  width:100%;
+  min-height:200px;
+}
+.image-holder img{
+  width:100%;
+  min-height:200px;
+}
+.env-sus{
+  border-left: 5px solid #e6d419;
+}
+.env-sus .projext-item-content-titel{
+  color:#e6d419;
+}
+.rur-dev{
+  border-left: 5px solid #a81b16;
+}
+.rur-dev .projext-item-content-titel{
+  color:#a81b16;
+}
+.project-item-image {
+  height:300px;
+  object-fit: cover;
+}
+
+.project-item-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding:20px 20px;
+}
+.edu-skill .project-item-content, .sus-liv .project-item-content{
+  padding:20px 60px;
+}
+.projext-item-content-titel {
+  font-family: 'Labrada', serif;
+  font-size:2rem;
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+.img-holder-show{
+  display:none;
+}
+.projext-item-content-text {
+  font-weight: 100;
+  color: #d1cdcd;
+  font-family: 'Signika Negative', sans-serif;
+  line-height:25px;
+  text-align:justify;
+}
+@media screen and (max-width: 1100px) {
+  .project-area{
+    grid-template-columns: 40% 40%;
+    column-gap: 100px;
+    row-gap: 17px;
+  }
+  .edu-skill .project-item-content, .sus-liv .project-item-content{
+    padding:10px 20px;
+  }
+} 
+@media screen and (max-width: 620px) {
+  .project-area, .project-one{
+    grid-template-columns: 90%;
+  }
+  .sus-liv,.edu-skill{
+    flex-direction:column;
+  }
+  .img-holder{
+    width:100%;
+    min-height:200px;
+  }
+  .sus-liv .img-holder{
+    display:none;
+  }
+  .img-holder-show{
+    display:flex;
+    width:100%;
+    min-height:200px;
+  }
+  .img-holder-show .project-item-image {
+    height:300px;
+    object-fit: cover;
+    width:100%;
+  }
+} 
+@media screen and (max-width: 501px) {
+  .community-heading{
+    height:50vh;
+  }
+  .overlayText {
+    top:0;
+    left:0;
+    align-self:center;
+    margin:28% 20%;
+  }
+  .community-quote{
+    text-align:left;
+    width:100%;
+    padding:0;
+    margin:0;
+    font-size:1rem;
+  }
+  .community-quote p{
+    padding-left:10px;
+  }
+  .overlayText h1{
+    font-size:2rem; 
+  }
+  .project-area ,.project-area-one{
+    grid-template-columns: 80%;
+    column-gap: 20px;
+    row-gap: 50px;
+  }
+}
+
