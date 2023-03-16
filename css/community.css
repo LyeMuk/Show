@@ -20,7 +20,7 @@ body{
   left: 0px;
   z-index: 2;
   background:black;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 .overlayText h1{
   font-family: 'Labrada', serif;
@@ -49,6 +49,7 @@ body{
 }
 .overlayText {
   position: absolute;
+  height:auto;
   top: 30%;
   left: 12%;
   z-index: 2;
@@ -199,11 +200,15 @@ body{
   .community-heading{
     height:50vh;
   }
+  .overlay{
+    height:50vh;
+  }
   .overlayText {
     top:0;
     left:0;
     align-self:center;
     margin:28% 20%;
+    height:auto;
   }
   .community-quote{
     text-align:left;
